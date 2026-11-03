@@ -89,6 +89,37 @@ class TestIntegerLength(unittest.TestCase):
 
 
 
+class DivisionTest(unittest.TestCase):
+
+    # def test_dividebyzero(self):
+    #     self.assertRaises(ZeroDivisionError , mainFunction.divide, 10 ,0 )
+
+    def test_dividebynonzero(self):
+            self.assertRaises(ZeroDivisionError , mainFunction.divide, 10 ,2)
+
+
+    # Another way to do this : Testing exceptions using context manager
+    def test_dividebyzero(self):
+        with self.assertRaises(ZeroDivisionError):
+
+            mainFunction.divide(10,0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         
 if __name__ == "__main__":
     unittest.main()

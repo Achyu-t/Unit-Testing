@@ -27,6 +27,20 @@ def length_of_integer(n):
     return int(math.floor(math.log10(n)) + 1)
 
 
+def divide(x,y) :
+
+    result = x/y
+
+    if y == 0 :
+        raise ZeroDivisionError
+
+    else :
+        return result
+
+    
+
+
+
 
 
 
