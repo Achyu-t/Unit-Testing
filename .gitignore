@@ -1,2 +1,4 @@
 src/unit_testing/__pycache__/
 .venv/
+src/pytest/__pycache__/
+.pytest_cache/
